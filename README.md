@@ -1,2 +1,2 @@
-# brainsterLabs
-First project at brainster full stack academy made in lumosPHP.
+# LumosPHP
+Personal framework for coding projects in vanilla php.
