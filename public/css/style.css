@@ -88,6 +88,11 @@ footer {
     -moz-box-shadow: -2px 6px 11px 0px rgba(0,0,0,0.54);
 }
 
+.card:hover {
+    transform: scale(1.1);
+    transition: 0.40s ease-in-out;
+}
+
 .card.d-none {
     display: none;
 }
