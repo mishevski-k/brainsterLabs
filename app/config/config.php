@@ -10,7 +10,7 @@
 
     //URLROOT
     // define('URLROOT', 'http://localhost/LumosPHP/');
-    define('URLROOT', 'http://192.168.1.7/brainsterLabs/');
+    define('URLROOT', 'http://192.168.1.7/brainsterLabs');
 
     //Sitename
     define('SITENAME', 'BrainsterLabs');

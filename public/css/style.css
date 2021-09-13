@@ -1,2 +1,381 @@
 @import url('./config.css');
 
+.nav {
+    width: 100%;
+    min-height: 10vh;
+    padding: 2rem 1rem;
+    background-color: var(--clr-primary-600);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.nav > .nav-brand > a {
+    font-size: var(--fs-l);
+    font-weight: 700;
+}
+
+.nav > .nav-brand > a:hover {
+    color: #c23d3d;
+    transition: 0.40s ease-in-out;
+}
+
+.nav > .nav-menu {
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.nav > .nav-links {
+    min-width: 80%;
+}
+
+.nav > .nav-links > ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav > .nav-links > ul > .nav-link {
+    list-style-type: none;
+}
+
+.nav > .nav-links > ul > .nav-link > a {
+    font-size: var(--fs-s);
+    font-weight: 600;
+}
+
+.nav > .nav-links > ul > a {
+    padding: 0.5rem;
+    color: var(--clr-neutral-200);
+    border-radius: 15px;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--clr-neutral-800);
+    padding: 1rem 0rem;
+    font-size: var(--fs-xs);
+    color: var(--clr-neutral-200);
+}
+
+.main-container {
+    min-height: 90vh;
+    background-color: var(--clr-primary-600);
+}
+
+.card-container {
+    min-width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--clr-neutral-200);
+    border-radius: 15px;
+    width: 25%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: -2px 6px 11px 0px rgba(0,0,0,0.54);
+    -webkit-box-shadow: -2px 6px 11px 0px rgba(0,0,0,0.54);
+    -moz-box-shadow: -2px 6px 11px 0px rgba(0,0,0,0.54);
+}
+
+.card.d-none {
+    display: none;
+}
+
+.card-banner {
+    flex-basis: 30%;
+}
+
+.card-banner img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.card-main {
+    padding: 0.4rem;
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-main > * {
+    font-weight: 600;
+    font-size: var(--fs-s);
+    margin-block: 0.6rem;
+    color: var(--clr-neutral-800);
+}
+
+.card-category {
+    background-color: var(--clr-primary-600);
+    width: 80%;
+    padding: 0.4rem;
+}
+
+.card-title {
+    
+}
+
+.card-desc {
+    font-size: var(--fs-xs);
+    font-weight: 500;
+}
+
+.card-button button {
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--clr-neutral-200);
+    float: right;
+}
+
+.main-container > .banner {
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-xl);
+    color: var(--clr-neutral-200);
+}
+
+.filter-container {
+    display: flex;
+    background-color: var(--clr-neutral-800);
+}
+
+.filter {
+    flex-basis: 100%;
+    border: none;
+    outline: none;
+    padding: 2rem;
+    background-color: var(--clr-neutral-800);
+    color: var(--clr-neutral-200);
+    font-size: var(--fs-s);
+    text-align: center;
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-color: #D14C4C;
+}
+
+.filter.active {
+    background-color: #D14C4C;
+}
+
+.form-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-block: 8rem;
+}
+
+.form-container form {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-item {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.form-label {
+    font-size: var(--fs-m);
+    font-weight: 600;
+    color: var(--clr-neutral-800);
+}
+
+.form-input {
+    margin-block: 0.5rem;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    background-color: var(--clr-neutral-200);
+    font-size: var(--fs-m);
+    border-radius: 5px;
+}
+
+.form-input:hover {
+    background-color: var(--clr-neutral-400);
+    transition: 0.40s ease-in-out;
+}
+
+.option-container {
+    width: 100%;
+    background-color: var(--clr-neutral-200);
+    border-radius: 5px;
+    color: var(--clr-neutral-800);
+    font-weight: 600;
+    font-size: var(--fs-m);
+    display: none;
+}
+
+.option {
+    padding: 1rem;
+}
+
+.selected {
+    position: relative;
+}
+
+.option:hover {
+    background-color: var(--clr-neutral-400);
+}
+
+.option-container label, .selected , .option {
+    cursor: pointer;
+}
+
+.option-container > .option > .radio {
+    display: none;
+}
+
+.option-container.active {
+    display: block;
+}
+
+.selected::after {
+    content: url("../img/chevron-down.svg");
+    position: absolute;
+    right: 1rem;
+    top: 30%;
+    transition: 0.5s ease;
+}
+
+.selected.active::after {
+    content: url("../img/chevron-up.svg");
+}
+
+.form-btn {
+    background-color: #D14C4C;
+    color: var(--clr-neutral-200);
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.form-btn:hover {
+    background-color: #c23d3d;
+    color: var(--clr-neutral-400);
+}
+
+.form-error {
+    color: #c23d3d;
+    font-size: var(--fs-s);
+    font-weight: 600;
+    margin-block: 0.2rem;
+}
+
+@media only screen and (max-width: 1024px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .nav.active {
+        background-color: var(--clr-neutral-800);
+        color: var(--clr-neutral-200);
+    }
+
+    .nav.active a {
+        color: var(--clr-neutral-200);
+    }
+
+    .nav.active > .nav-brand a:hover {
+        color: var(--clr-primary-600);
+    }
+
+    .nav > .nav-menu {
+        display: block;
+    }
+
+    .nav > .nav-links {
+        display: none;
+        margin-top: 0.5rem;
+        width: 100%;
+    }
+
+    .nav > .nav-links > ul {
+        flex-direction: column;
+    }
+
+    .nav > .nav-links > ul > .nav-link  {
+        margin-block: 0.5rem;
+    }
+
+    .card {
+        width: 35%;
+    }
+
+    .form-container form {
+        width: 80%;
+    }
+    
+}
+
+@media only screen and (max-width: 640px) {
+    .nav.active {
+        height: 100vh;
+        justify-content: flex-start;
+    }
+
+    .card-container {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .card {
+        min-width: 60%;
+        margin: 1rem 0rem;
+    }
+
+    .main-container.active {
+        display: none;
+    }
+
+    footer.active {
+        display: none;
+    }
+
+    .filter-container {
+        flex-direction: column;
+    }
+
+    .form-container form {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .form-item {
+        flex-basis: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .main-container > .banner {
+        font-size: 1rem;
+    }
+}
